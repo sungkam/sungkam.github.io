@@ -1,0 +1,11 @@
+venv/
+.idea/
+
+*.pyc
+
+
+
+migrations/
+
+
+main/settings_production.py

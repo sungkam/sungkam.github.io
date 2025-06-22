@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="website, web design, web development, web builder, web pages, web developer, web dev, web freelancer" />
+    <meta name="description" content="website, web design, web development, seo, online marketing to be done by our professional knowledge, skill and experience" />
+    <title>{% block title %}EasyCoding{% endblock %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'blog/images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'blog/css/custom.min.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/e57bc5ae97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+{% include 'basecamp/navbar.html' %}
+
+{% block content %}
+{% endblock %}
+
+
+<script src="{% static 'blog/js/jquery.min.js' %}"></script>
+<script src="{% static 'blog/js/popper.min.js' %}"></script>
+<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'blog/js/custom.js' %}"></script>
+
+</body>
+</html>
