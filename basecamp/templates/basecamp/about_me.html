@@ -17,45 +17,38 @@
 {% include 'blog/navbar.html' %}
 
 <div class="container">
-
     <div class="row">
-        <div class="col-md-2">
-
-        </div>
-
+        <div class="col-md-2"></div>
         <div class="col-md-8">
-                    <!-- body logo -->
-            <div class="header header-logged-out width-full pt-5 pb-4" role="banner"></div>
-            <div class="container clearfix width-full text-center">
-                <img height="80" class="rounded-circle" width="80" src="{% static 'basecamp/images/mykids.jpg' %}" />
-            </div>
-            <h1 class="my-3">About me</h1>
-            <h3 class="my-3">This is Sung Kam from EasyCoding</h3>
-                <div>
-                    <p>I am still studying computer software programming for web development.
-                        This website is one of my outcomes on the way to my ultimate goal. another website I made is <a href="https://easygoshuttle.com.au">https://easygoshuttle.com.au</a> I love to learn and build something on my own hand.
-                        Ultimately I wish my work make other happy, therefore other's happiness is my success!</p>
-                    <p>My Skill Set : HTML5,  CSS, JavaScript,  Python,  Django, Responsive html email, Htmx, Bootstrap, Git & Github, AWS S3, GCP depolyment, Gunicorn & Nginx. Experience with celery, celery-beat, redis, docker compose, full set-up deployment and SEO. </p>
+            <div class="card shadow-sm border-0 p-4 mb-4">
+                <div class="text-center">
+                    <img height="80" width="80" class="rounded-circle mb-3" src="{% static 'basecamp/images/mykids.jpg' %}" />
+                    <h1 class="my-3">About Me</h1>
+                    <h3 class="mb-4 text-muted">This is Sung Kam from EasyCoding</h3>
                 </div>
-                <p>“STAY HUNGRY, STAY FOOLISH” — Steve Jobs</p>
+                <div>
+                    <p>I am still studying computer software programming for web development.  
+                    This website is one of my outcomes on the way to my ultimate goal.  
+                    Another website I made is <a href="https://easygoshuttle.com.au">easygoshuttle.com.au</a>.  
+                    I love to learn and build something with my own hands.  
+                    Ultimately, I hope my work makes others happy—because their happiness is my success!</p>
+
+                    <p><strong>My Skill Set</strong>: HTML5, CSS, JavaScript, Python, Django, Responsive HTML email, HTMX, Bootstrap, Git & GitHub, AWS S3, GCP deployment, Gunicorn & Nginx.  
+                    Experience with Celery, celery-beat, Redis, Docker Compose, full setup deployment, and SEO.</p>
+                </div>
+                <blockquote class="blockquote text-right mt-4 mb-0">
+                    <p>“STAY HUNGRY, STAY FOOLISH” — Steve Jobs</p>
+                </blockquote>
+            </div>
         </div>
-        <div class="col-md-2">
-
-        </div>
-
-
     </div>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-2">
-
-        </div>
-
+        <div class="col-md-2"></div>
         <div class="col-md-2">
             <img class="img-fluid" src="{% static 'basecamp/images/Capture1.JPG' %}"/>
         </div>
-
         <div class="col-md-2">
             <img class="img-fluid" src="{% static 'basecamp/images/Capture.JPG' %}"/>
         </div>
@@ -69,9 +62,7 @@
                 {% endif %}
         </div>
         <div class="col-md-1">
-
         </div>
-
     </div>
 </div>
     <br>
