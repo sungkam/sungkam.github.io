@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>EasyCoding</title>
+    <title>{% block title %}EasyCoding{% endblock %}</title>
     <link rel="shortcut icon" type="image/x-icon" href="blog/static/blog/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +12,36 @@
     <link rel="stylesheet" href="blog/static/blog/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="blog/static/blog/css/custom.min.css">
     <script src="https://kit.fontawesome.com/e57bc5ae97.js" crossorigin="anonymous"></script>
+    <style>
+      /* 세로/가로 정중앙 맞춤 */
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+      .center-container {
+        min-height: 100vh; /* 화면 높이 100% */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: #f8f9fa; /* 은은한 배경 */
+      }
+      /* 소개 카드 넓이 조절 */
+      .about-card {
+        max-width: 700px;
+        width: 100%;
+      }
+      /* 하단 이미지 그룹 */
+      .image-group {
+        margin-top: 3rem;
+      }
+      .image-group img {
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
+      }
+    </style>
 </head>
 <body>
 
@@ -43,59 +74,71 @@
     </div>
 </div>
 
-<!-- BODY -->
-<div class="container" style="margin-top: 0;">
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 text-center">
-            <div class="header header-logged-out width-full pt-5 pb-4" role="banner"></div>
-            <img height="80" class="rounded-circle" width="80" src="basecamp/static/basecamp/images/mykids.jpg" />
-            <h1 class="my-3">About me</h1>
-            <h3 class="my-3">This is Sung Kam from EasyCoding</h3>
-            <p>I am still studying computer software programming for web development.
-                This website is one of my outcomes on the way to my ultimate goal. another website I made is 
-                <a href="https://easygoshuttle.com.au">https://easygoshuttle.com.au</a>.
-                I love to learn and build something on my own hand.
-                Ultimately I wish my work make others happy, therefore others' happiness is my success!</p>
-            <p>My Skill Set: HTML5, CSS, JavaScript, Python, Django, Responsive HTML email, Htmx, Bootstrap, Git & GitHub, AWS S3, GCP deployment, Gunicorn & Nginx. Experience with Celery, Celery-beat, Redis, Docker Compose, full set-up deployment, and SEO.</p>
-            <p>“STAY HUNGRY, STAY FOOLISH” — Steve Jobs</p>
-        </div>
-        <div class="col-md-2"></div>
+<div class="center-container container">
+    <div class="card shadow-sm border-0 p-4 mb-4 about-card text-center">
+        <img height="80" width="80" class="rounded-circle mb-3 mx-auto" src="{% static 'basecamp/images/mykids.jpg' %}" alt="Profile Image" />
+        <h1 class="my-3">About Me</h1>
+        <h3 class="mb-4 text-muted">Hi, I’m Sung Kam from EasyCoding</h3>
+        <p>
+            I’m a passionate web developer on a continuous journey of mastering computer software programming. This website showcases one of my key projects along the way to achieving my ultimate goal.
+            Another project I’m proud of is <a href="https://easygoshuttle.com.au" target="_blank" rel="noopener noreferrer">EasyGoShuttle</a>.
+        </p>
+        <p>
+            I love learning new technologies and building meaningful projects with my own hands. My ultimate mission is to create work that brings happiness to others — because their happiness is the truest measure of my success.
+        </p>
+
+        <h4 class="mt-4 mb-3">Skills &amp; Experience</h4>
+        <ul class="list-unstyled text-left" style="columns: 2; column-gap: 2rem;">
+            <li><strong>Frontend & Backend:</strong> HTML5, CSS, JavaScript, Python, Django</li>
+            <li><strong>UI/UX:</strong> Responsive HTML emails, Bootstrap, Htmx</li>
+            <li><strong>DevOps & Deployment:</strong> AWS S3, Google Cloud Platform (GCP), Gunicorn, Nginx, Docker Compose</li>
+            <li><strong>Task Queues & Caching:</strong> Celery, Celery-beat, Redis</li>
+            <li><strong>Version Control & Collaboration:</strong> Git & GitHub</li>
+            <li><strong>SEO & Performance Optimization</strong></li>
+        </ul>
+
+        <p class="mt-3">
+            I am always eager to learn, adapt, and push the boundaries of what I can build.
+        </p>
+
+        <blockquote class="blockquote text-right mt-4 mb-0">
+            <p>“Stay hungry, stay foolish.” — Steve Jobs</p>
+        </blockquote>
     </div>
-</div>
 
-<!-- IMAGES + CONTACT -->
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-2"></div>
-
-        <div class="col-md-2">
-            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture1.JPG"/>
+    <div class="row image-group justify-content-center">
+        <div class="col-12 col-md-3">
+            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture1.JPG" alt="Image 1" />
         </div>
-
-        <div class="col-md-2">
-            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture.JPG"/>
+        <div class="col-12 col-md-3">
+            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture.JPG" alt="Image 2" />
         </div>
+    </div>
 
-        <div class="col-md-6">
+    <div class="row mt-4 justify-content-center text-center">
+        <div class="col-12 col-md-6">
             <p><a href="mailto:sungkam3@gmail.com"><i class="fal fa-envelope"></i> sungkam3@gmail.com</a></p>
-            <p><a href="sms:+61406783559"><i class="fad fa-sms"></i> sms: message me</a></p>
+            <p><a href="sms:+61406883355"><i class="fad fa-sms"></i> sms: message me</a></p>
             <p><a href="#"><i class="fal fa-address-card"></i> resume</a></p>
         </div>
-
-        <div class="col-md-1"></div>
     </div>
 </div>
 
-<!-- FOOTER -->
+<br><br><br>
+
 <div class="container">
-    <div class="footer container-xl width-full p-responsive" role="contentinfo">
-        <ul class="list-style-none border-top d-flex flex-wrap flex-justify-center flex-lg-justify-between">
-            <li class="mr-3 mr-lg-2 list-unstyled">&copy; 2020 EasyCoding</li>
-            <li class="mr-3 mr-lg-2 list-unstyled"><a href="mailto:sungkam3@gmail.com">contact</a></li>
-            <li class="mr-3 mr-lg-2 list-unstyled"><a href="/terms/">terms</a></li>
-            <li class="mr-3 mr-lg-2 list-unstyled"><a href="/privacy/">privacy</a></li>
-        </ul>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <div class="footer container-xl width-full p-responsive" role="contentinfo">
+                <ul class="list-style-none border-top d-flex flex-wrap flex-justify-center flex-lg-justify-between ">
+                    <li class="mr-3 mr-lg-2 list-unstyled">&copy; 2020 EasyCoding</li>
+                    <li class="mr-3 mr-lg-2 list-unstyled"><a href="mailto:sungkam3@gmail.com">contact</a></li>
+                    <li class="mr-3 mr-lg-2 list-unstyled"><a href="/terms/" data-ga-click="Footer, go to terms, text:terms">terms</a></li>
+                    <li class="mr-3 mr-lg-2 list-unstyled"><a href="/privacy/" data-ga-click="Footer, go to privacy, text:privacy">privacy</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
