@@ -6,130 +6,129 @@
     <link rel="shortcut icon" type="image/x-icon" href="blog/static/blog/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="website, web design, web development, web builder, web pages, web developer, web dev, web freelancer" />
-    <meta name="description" content="website, web design, web development, seo, online marketing to be done by our professional knowledge, skill and experience" />
+    <meta name="keywords" content="website, web design, web development, web developer, software engineer, SEO" />
+    <meta name="description" content="Personal portfolio of Sung Kam, web developer at EasyCoding. Focused on modern web development, AI collaboration, and real-world solutions." />
+
     <link rel="stylesheet" href="blog/static/blog/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="blog/static/blog/css/custom.min.css">
     <script src="https://kit.fontawesome.com/e57bc5ae97.js" crossorigin="anonymous"></script>
+
     <style>
-      /* 세로/가로 정중앙 맞춤 */
-      body, html {
-        height: 100%;
-        margin: 0;
-      }
-      .center-container {
-        min-height: 100vh; /* 화면 높이 100% */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 2rem;
-        background-color: #f8f9fa; /* 은은한 배경 */
-      }
-      /* 소개 카드 넓이 조절 */
-      .about-card {
-        max-width: 700px;
-        width: 100%;
-      }
-      /* 하단 이미지 그룹 */
-      .image-group {
-        margin-top: 3rem;
-      }
-      .image-group img {
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin-bottom: 1rem;
-      }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .center-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .about-card {
+            max-width: 720px;
+            width: 100%;
+        }
+        .image-group {
+            margin-top: 3rem;
+        }
+        .image-group img {
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
+
 <body>
 
 <!-- NAVBAR -->
-<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary" id="navbar">
+<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <div class="container">
         <div class="navbar-brand">
-            <a href="/"><i class="fad fa-layer-group"></i></a>
             <a href="/" class="title">EasyCoding</a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="/about_me/">About me</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/about_me/">About me</a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://easygoshuttle.com.au" target="_blank">EasyGo Airport Shuttle</a>
                 </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link p-2" href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
-                <li class="nav-item"><a class="nav-link p-2" href="https://slack.com" target="_blank" rel="noopener">Slack</a></li>
-                <li class="nav-item"><a class="nav-link p-2" href="https://opencollective.com" target="_blank" rel="noopener">Open Collective</a></li>
-                <li class="nav-item"><a class="btn btn-primary ml-2" href="#">Log in</a></li>
             </ul>
         </div>
     </div>
 </div>
 
 <div class="center-container container">
+
     <div class="card shadow-sm border-0 p-4 mb-4 about-card text-center">
-        <img height="80" width="80" class="rounded-circle mb-3 mx-auto" src="basecamp/static/basecamp/images/mykids.jpg" />
-        <h3 class="mb-4 text-muted">Hi, I’m Sung Kam from EasyCoding</h3>
-        <br>
-        <p>
-            I’m a passionate web developer on a continuous journey of mastering computer software programming. This website showcases one of my key projects along the way to achieving my ultimate goal.
-            Another project I’m proud of is <a href="https://easygoshuttle.com.au" target="_blank" rel="noopener noreferrer">EasyGo Airport Shuttle</a>.
-        </p>
-        <p>
-            I love learning new technologies and building meaningful projects with my own hands. My ultimate mission is to create work that brings happiness to others — because their happiness is the truest measure of my success.
-        </p>
 
-        <h4 class="mt-4 mb-3">Skills &amp; Experience</h4>
-        <ul class="list-unstyled text-left" style="columns: 2; column-gap: 2rem;">
-            <li><strong>Frontend & Backend:</strong> HTML5, CSS, JavaScript, Python, Django</li>
-            <li><strong>UI/UX:</strong> Responsive HTML emails, Bootstrap, Htmx</li>
-            <li><strong>DevOps & Deployment:</strong> AWS S3, Google Cloud Platform (GCP), Gunicorn, Nginx, Docker Compose</li>
-            <li><strong>Task Queues & Caching:</strong> Celery, Celery-beat, Redis</li>
-            <li><strong>Version Control & Collaboration:</strong> Git & GitHub</li>
-            <li><strong>SEO & Performance Optimization</strong></li>
-        </ul>
+        <!-- Header -->
+        <img height="80" width="80" class="rounded-circle mb-3 mx-auto"
+             src="basecamp/static/basecamp/images/sung_kam.jpg" alt="Sung Kam" />
 
-        <p class="mt-3">
-            I am always eager to learn, adapt, and push the boundaries of what I can build.
-        </p>
+        <h3 class="mb-4 text-muted">Hi, I’m Sung Kam — EasyCoding</h3>
 
+        <!-- AI Reflection -->
+        <div class="text-left">
+            <p>
+                Learning to code was challenging, but equally rewarding.
+                In today’s AI-driven world, writing code itself is no longer the hardest part.
+                What truly matters is understanding how systems work and how to communicate intent clearly.
+            </p>
+
+            <p>
+                Knowing how to code allows me to guide AI more precisely and efficiently.
+                And since AI can still make mistakes, the ability to review, reason, and correct outcomes
+                remains an essential skill — at least for now.
+            </p>
+
+            <p>
+                Working alongside AI has shown me just how powerful this collaboration can be.
+                Repetitive tasks are delegated to machines, while I focus on decisions,
+                architecture, and direction.
+                In the end, the real value lies not in the tool itself, but in how thoughtfully it is used.
+            </p>
+        </div>
+
+        <!-- Closing Thought -->
         <blockquote class="blockquote text-right mt-4 mb-0">
-            <p>“Stay hungry, stay foolish.” — Steve Jobs</p>
+            <p>
+                “Progress comes from learning continuously — and applying it thoughtfully.”
+            </p>
         </blockquote>
+
     </div>
 
+    <!-- Images -->
     <div class="row image-group justify-content-center">
         <div class="col-12 col-md-3">
-            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture1.JPG" alt="Image 1" />
+            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture1.JPG" alt="Project screenshot 1">
         </div>
         <div class="col-12 col-md-3">
-            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture.JPG" alt="Image 2" />
+            <img class="img-fluid" src="basecamp/static/basecamp/images/Capture.JPG" alt="Project screenshot 2">
         </div>
     </div>
+
 </div>
 
-<br>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-11">
-            <div class="footer container-xl width-full p-responsive" role="contentinfo">
-                <ul class="list-style-none border-top d-flex flex-wrap flex-justify-center flex-lg-justify-between ">
-                    <li class="mr-3 mr-lg-2 list-unstyled">&copy; 2020 EasyCoding</li>
-                    <li class="mr-3 mr-lg-2 list-unstyled"><a href="mailto:sungkam3@gmail.com">contact</a></li>
-                    <li class="mr-3 mr-lg-2 list-unstyled"><a href="/terms/" data-ga-click="Footer, go to terms, text:terms">terms</a></li>
-                    <li class="mr-3 mr-lg-2 list-unstyled"><a href="/privacy/" data-ga-click="Footer, go to privacy, text:privacy">privacy</a></li>
-                </ul>
-            </div>
-        </div>
+<!-- Footer -->
+<div class="container mt-5">
+    <div class="footer border-top pt-3 text-center">
+        <p class="mb-1">&copy; 2020 EasyCoding</p>
+        <p class="mb-0">
+            <a href="mailto:sungkam3@gmail.com">Contact</a> ·
+            <a href="/terms/">Terms</a> ·
+            <a href="/privacy/">Privacy</a>
+        </p>
     </div>
 </div>
 
@@ -137,7 +136,6 @@
 <script src="blog/static/blog/js/jquery.min.js"></script>
 <script src="blog/static/blog/js/popper.min.js"></script>
 <script src="blog/static/blog/js/bootstrap.min.js"></script>
-<script src="blog/static/blog/js/custom.js"></script>
 
 </body>
 </html>
