@@ -16,29 +16,39 @@
 <body>
 {% include 'blog/navbar.html' %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-2"></div>
+<div class="container py-5">
+    <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card shadow-sm border-0 p-4 mb-4">
+                
+                <!-- Header with Image -->
                 <div class="text-center">
-                    <img height="80" width="80" class="rounded-circle mb-3" src="{% static 'basecamp/images/mykids.jpg' %}" />
+                    <img height="80" width="80" class="rounded-circle mb-3" src="{% static 'basecamp/images/mykids.jpg' %}" alt="Sung Kam" />
                     <h1 class="my-3">About Me</h1>
-                    <h3 class="mb-4 text-muted">This is Sung Kam from EasyCoding</h3>
+                    <h3 class="mb-4 text-muted">Sung Kam — EasyCoding</h3>
                 </div>
-                <div>
-                    <p>I am still studying computer software programming for web development.  
-                    This website is one of my outcomes on the way to my ultimate goal.  
-                    Another website I made is <a href="https://easygoshuttle.com.au">easygoshuttle.com.au</a>.  
-                    I love to learn and build something with my own hands.  
-                    Ultimately, I hope my work makes others happy—because their happiness is my success!</p>
 
-                    <p><strong>My Skill Set</strong>: HTML5, CSS, JavaScript, Python, Django, Responsive HTML email, HTMX, Bootstrap, Git & GitHub, AWS S3, GCP deployment, Gunicorn & Nginx.  
-                    Experience with Celery, celery-beat, Redis, Docker Compose, full setup deployment, and SEO.</p>
+                <!-- AI Reflection Section -->
+                <div>
+                    <p>
+                        Learning to code was challenging, but it was equally rewarding.  
+                        Now, in the age of AI, coding isn’t as essential as it used to be.  
+                        Still, knowing how to code allows me to instruct AI more efficiently and accurately.  
+                        And since AI can make mistakes occasionally, the ability to spot and correct them remains important—at least for now.
+                    </p>
+
+                    <p>
+                        I’ve also come to experience firsthand just how efficient it is to work alongside AI.  
+                        Repetitive tasks can be handled by AI, while I focus on decision-making and setting the direction.  
+                        In the end, what really matters isn’t the tool itself, but how you use it.
+                    </p>
                 </div>
+
+                <!-- Quote -->
                 <blockquote class="blockquote text-right mt-4 mb-0">
                     <p>“STAY HUNGRY, STAY FOOLISH” — Steve Jobs</p>
                 </blockquote>
+
             </div>
         </div>
     </div>
